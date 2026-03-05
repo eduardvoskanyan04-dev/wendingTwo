@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Հարսանեկան Հրավիրատոմս</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@300;400;500;600&family=Noto+Serif+Armenian:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section-scroll">
+        <!-- Background Slider -->
+        <div class="hero-slider">
+            <div class="slide slide-active">
+                <div class="slide-bgimg" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/wending_one_image.jpg');"></div>
+            </div>
+            <div class="slide">
+                <div class="slide-bgimg" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/wending_two_image.jpg');"></div>
+            </div>
+            <div class="slide">
+                <div class="slide-bgimg" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/wending_three_image.jpg');"></div>
+            </div>
+        </div>
+
+        <!-- Mobile specific Date -->
+        <div class="mobile-top-date reveal fade-down">
+            <div class="line"></div>
+            <span>28.04.2026</span>
+            <div class="line"></div>
+        </div>
+
+        <!-- Center Content -->
+        <div class="hero-content reveal fade-up">
+            <div class="hero-logo-wrap">
+                <span class="hero-logo-v">S</span><span class="hero-logo-m">M</span>
+            </div>
+            <p class="hero-names">ՍՈՒՐԵՆ ԵՎ ՄԵՐԻ</p>
+        </div>
+
+        <!-- Bottom Controls -->
+        <div class="hero-bottom reveal fade-up delay-1">
+            <div class="hero-bottom-container">
+                <div class="line flex-1"></div>
+                <div class="slide-numbers">
+                    <span id="current-slide">1</span> / <span id="total-slides">3</span>
+                </div>
+                <div class="line flex-3"></div>
+                <div class="hero-date">28.04.2026</div>
+                <div class="line flex-3"></div>
+                <div class="hero-arrows">
+                    <button class="nav-arrow prev-btn"><i class="fa-solid fa-angle-left"></i></button>
+                    <button class="nav-arrow" style="opacity:0; cursor:default; pointer-events:none; width:10px;"></button>
+                    <button class="nav-arrow next-btn"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+                <div class="line flex-1"></div>
+                <button class="play-ring-btn" id="musicToggleHero">
+                    <i class="fa-solid fa-play" id="musicIconHero"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section id="countdown" class="section-padding section-margin text-center">
+        <h2 class="countdown-title reveal fade-up">Կիսիր այս կարևոր օրը մեզ հետ միասին</h2>
+        <div class="timer reveal fade-up">
+            <div class="time-block">
+                <span class="number" id="days">00</span>
+                <span class="time-label">ՕՐ</span>
+            </div>
+            <span class="colon">:</span>
+            <div class="time-block">
+                <span class="number" id="hours">00</span>
+                <span class="time-label">ԺԱՄ</span>
+            </div>
+            <span class="colon">:</span>
+            <div class="time-block">
+                <span class="number" id="minutes">00</span>
+                <span class="time-label">ՐՈՊԵ</span>
+            </div>
+            <span class="colon">:</span>
+            <div class="time-block">
+                <span class="number" id="seconds">00</span>
+                <span class="time-label">ՎՐԿ</span>
+            </div>
+        </div>
+        <div class="countdown-decoration reveal fade-up delay-1">
+            <img src="assets/champagne.png" alt="Champagne Glasses">
+        </div>
+    </section>
+
+    <!-- Invitation Message -->
+    <section id="message" class="section-margin section-message text-center">
+        <h2 class="section-title reveal fade-up">Սիրելի' ընկերներ և բարեկամներ,</h2>
+        <p class="section-text reveal fade-up delay-1">
+            Սրտանց հրավիրում ենք Ձեզ մեզ հետ միասին տոնելու մեր կյանքի ամենակարևոր և գեղեցիկ օրը՝ մեր հարսանիքը:
+        </p>
+    </section>
+
+    <!-- Highlight Date Section -->
+    <section id="highlight-date" class="section-margin date-highlight-section">
+        <div class="date-box reveal zoom-in">
+            <div class="month">
+                <p>Ապրիլ</p>
+            </div>
+            <div class="day">
+                <p>28</p>
+            </div>
+            <div class="hour">
+                <p>14:00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section id="gallery" class="gallery section-padding section-margin text-center">
+        <h2 class="section-title reveal fade-up">Պահեր Մեր Հեքիաթից</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item reveal zoom-in">
+                <img src="assets/wending_one_image.jpg" alt="Photo 1" loading="lazy">
+            </div>
+            <div class="gallery-item reveal zoom-in delay-1">
+                <img src="assets/wending_two_image.jpg" alt="Photo 2" loading="lazy">
+            </div>
+            <div class="gallery-item reveal zoom-in delay-2">
+                <img src="assets/wending_three_image.jpg" alt="Photo 3" loading="lazy">
+            </div>
+            <div class="gallery-item reveal zoom-in delay-3">
+                <img src="assets/wending_four_image.jpg" alt="Photo 4" loading="lazy">
+            </div>
+            <div class="gallery-item reveal zoom-in delay-4">
+                <img src="assets/wending_five_image.jpg" alt="Photo 5" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule / Timeline Section -->
+    <section id="schedule" class="schedule section-padding" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/schedule_bg.jpg');">
+        <h2 class="section-title text-white text-center reveal fade-up">Ժամանակացույց</h2>
+        
+        <div class="schedule-flex">
+            <!-- Groom House -->
+            <div class="schedule-item reveal fade-up">
+                <div class="schedule-img">
+                    <img src="assets/schedule_groom.png" alt="Փեսայի Տուն" />
+                </div>
+                <div class="schedule-info">
+                    <p class="time">11:00</p>
+                    <p class="name">Փեսայի Տուն</p>
+                    <p class="address">Ք. Երևան, Նորք Մարաշ , 2-րդ փողոց ,Արա Հարությունյան 8</p>
+                    <a href="https://yandex.ru/maps/10262/yerevan/?text=Երևան%2C%20Նորք%20Մարաշ%20%2C%202-րդ%20փողոց%20%2CԱրա%20Հարությունյան%208" class="map-link" target="_blank">Քարտեզ</a>
+                </div>
+            </div>
+
+            <!-- Bride House -->
+            <div class="schedule-item reveal fade-up delay-1">
+                <div class="schedule-img">
+                    <img src="assets/schedule_bride.png" alt="Հարսի Տուն" />
+                </div>
+                <div class="schedule-info">
+                    <p class="time">12:30</p>
+                    <p class="name">Հարսի Տուն</p>
+                    <p class="address">ք.Երևան, Ջրվեժ,մայակ 27</p>
+                    <a href="https://yandex.ru/maps/10262/yerevan/?text=Երևան%2C%20Ջրվեժ%2Cմայակ%2027" class="map-link" target="_blank">Քարտեզ</a>
+                </div>
+            </div>
+
+            <!-- Church -->
+            <div class="schedule-item reveal fade-up delay-2">
+                <div class="schedule-img">
+                    <img src="assets/schedule_church.png" alt="Եկեղեցի" />
+                </div>
+                <div class="schedule-info">
+                    <p class="time">14:30</p>
+                    <p class="name">Պսակադրություն</p>
+                    <p class="address">Սուրբ Աստվածածին եկեղեցի</p>
+                    <a href="https://yandex.ru/maps/org/surp_astvatsatsin_church/113829443725/?ll=44.540700%2C40.186800&z=17" class="map-link" target="_blank">Քարտեզ</a>
+                </div>
+            </div>
+
+            <!-- Restaurant -->
+            <div class="schedule-item reveal fade-up delay-3">
+                <div class="schedule-img">
+                    <img src="assets/schedule_restaurant.png" alt="Ռեստորան" />
+                </div>
+                <div class="schedule-info">
+                    <p class="time">17:00</p>
+                    <p class="name">Հարսանյաց հանդիսություն</p>
+                    <p class="address">Florence Restaurant</p>
+                    <a href="https://yandex.ru/maps/org/florence/1066744889/?ll=44.484200%2C40.201600&z=17" class="map-link" target="_blank">Քարտեզ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Addresses -->
+    <section id="locations" class="locations section-margin">
+        <h2 class="section-title text-center reveal fade-up">Հասցեներ</h2>
+        
+        <div class="address-wrapper">
+            <!-- Groom's House -->
+            <div class="address-item reveal fade-up">
+                <div class="address-img-wrap reveal zoom-in">
+                    <img src="assets/groom_house.png" alt="Փեսայի Տուն" class="img-arched">
+                </div>
+                <div class="address-details">
+                    <h3 class="address-type" style="font-size: 1.1rem;">Փեսայի Տուն</h3>
+                    <p class="address-text">Ք. Երևան, Նորք Մարաշ ,<br>2-րդ փողոց ,Արա Հարությունյան 8</p>
+                    <a href="https://yandex.ru/maps/10262/yerevan/?text=Երևան%2C%20Նորք%20Մարաշ%20%2C%202-րդ%20փողոց%20%2CԱրա%20Հարությունյան%208" class="address-link" target="_blank">Քարտեզ</a>
+                </div>
+            </div>
+
+            <!-- Bride's House -->
+            <div class="address-item reveal fade-up delay-1">
+                <div class="address-img-wrap reveal zoom-in delay-1">
+                    <img src="assets/bride_house.png" alt="Հարսի Տուն" class="img-arched">
+                </div>
+                <div class="address-details">
+                    <h3 class="address-type" style="font-size: 1.1rem;">Հարսի Տուն</h3>
+                    <p class="address-text">ք.Երևան, Ջրվեժ,<br>մայակ 27</p>
+                    <a href="https://yandex.ru/maps/10262/yerevan/?text=Երևան%2C%20Ջրվեժ%2Cմայակ%2027" class="address-link" target="_blank">Քարտեզ</a>
+                </div>
+            </div>
+
+            <!-- Church -->
+            <div class="address-item reveal fade-up delay-2">
+                <div class="address-img-wrap reveal zoom-in delay-2">
+                    <img src="https://images.unsplash.com/photo-1586858750326-f0ab090546cc?q=80&w=800&auto=format&fit=crop" alt="Սուրբ Աստվածածին եկեղեցի" class="img-arched">
+                </div>
+                <div class="address-details">
+                    <h3 class="address-type" style="font-size: 1.1rem;">Պսակադրություն</h3>
+                    <p class="address-text">Սուրբ Աստվածածին եկեղեցի<br><span class="address-subtext">(Նորք-Մարաշ)</span></p>
+                    <a href="https://yandex.ru/maps/org/surp_astvatsatsin_church/113829443725/?ll=44.540700%2C40.186800&z=17" class="address-link" target="_blank">Քարտեզ</a>
+                </div>
+            </div>
+            
+            <!-- Restaurant -->
+            <div class="address-item reveal fade-up delay-3">
+                <div class="address-img-wrap reveal zoom-in delay-3">
+                    <img src="assets/restaurant.jpg" alt="Florence Restaurant" class="img-arched">
+                </div>
+                <div class="address-details">
+                    <h3 class="address-type" style="font-size: 1.1rem;">Հարսանյաց հանդիսություն</h3>
+                    <p class="address-text">Florence Restaurant<br><span class="address-subtext">Yerevan</span></p>
+                    <a href="https://yandex.ru/maps/org/florence/1066744889/?ll=44.484200%2C40.201600&z=17" class="address-link" target="_blank">Քարտեզ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing Message -->
+    <section class="closing-section section-padding text-center">
+        <div class="closing-content reveal fade-up">
+            <h2 class="section-title">Սիրով սպասում ենք Ձեզ</h2>
+            <p class="section-text" style="max-width: 600px; margin: 0 auto 2rem;">
+                Կիսելու մեր կյանքի ամենակարևոր ու գեղեցիկ ակնթարթները:
+            </p>
+            <div class="closing-names" style="font-family: var(--f-heading); font-size: 2.5rem; letter-spacing: 5px; color: var(--c-dark-text);">Սուրեն & Մերի</div>
+        </div>
+    </section>
+
+    <!-- Footer Banner -->
+    <div class="footer-banner reveal zoom-in" style="width: 100%; height: 40rem; overflow: hidden; margin-top: 4rem; background-color: var(--c-bg);">
+        <img src="assets/wending_four_image.jpg" alt="Suren & Meri Footer" style="width: 100%; height: 100%; object-fit: contain; object-position: center;">
+    </div>
+
+    <!-- Final Footer -->
+    <footer class="footer text-center" style="background-color: #09090b; padding: 3rem 0; color: #fff;">
+        <div class="footer-container">
+            <div class="footer-logo" style="font-family: var(--f-heading); font-size: 2rem; letter-spacing: 10px; margin-bottom: 1rem;">S & M</div>
+            <p class="credits" style="font-size: 0.8rem; opacity: 0.6; letter-spacing: 2px;">&copy; 2026 Բոլոր իրավունքները պաշտպանված են</p>
+        </div>
+    </footer>
+
+
+
+    <audio id="bgMusic" autoplay loop>
+        <!-- Actual music from w114 -->
+        <source src="https://templates.invito.am/Wedding/wedding14/public/media/Sirusho%20Sirt.mp3?1" type="audio/mpeg">
+    </audio>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
